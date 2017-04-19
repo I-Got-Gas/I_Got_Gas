@@ -2,9 +2,11 @@
   "name": "I_Got_Gas",
   "version": "1.0.0",
   "description": "A car fuel finding app",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha",
+    "start": "node server.js",
+    "lint": "eslint **/*.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +23,7 @@
     "bluebird": "^3.5.0",
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
+    "gulp-cli": "^1.2.2",
     "mongoose": "^4.9.5",
     "morgan": "^1.8.1"
   },
