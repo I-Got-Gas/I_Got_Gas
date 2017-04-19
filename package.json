@@ -1,0 +1,38 @@
+{
+  "name": "I_Got_Gas",
+  "version": "1.0.0",
+  "description": "A car fuel finding app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/I-Got-Gas/I_Got_Gas.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/I-Got-Gas/I_Got_Gas/issues"
+  },
+  "homepage": "https://github.com/I-Got-Gas/I_Got_Gas#readme",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "mongoose": "^4.9.5",
+    "morgan": "^1.8.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0",
+    "debug": "^2.6.3",
+    "eslint": "^3.19.0",
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^3.0.1",
+    "gulp-mocha": "^4.3.0",
+    "gulp-nodemon": "^2.2.1",
+    "mocha": "^3.2.0"
+  }
+}
