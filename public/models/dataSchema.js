@@ -1,5 +1,5 @@
 'use strict';
-
+//May not need this because we are not saving into a db. But keep anyway
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
