@@ -7,6 +7,7 @@ const morgan = require('morgan');
 const serverError = require('debug')('igotgas:error');
 const mongoose = require('mongoose');
 const Promise = require('./public/lib/promise');
+const bodyParser = require('body-parser');
 
 mongoose.Promise = Promise;
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/dev');
@@ -14,6 +15,8 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/dev');
 //set view engine
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'handlebars');
+app.use(bodyParser.JSON);
+app.use(bodyParser.urlEncoded({ extended: false }));
 
 /*remember to put in routes*/
 
