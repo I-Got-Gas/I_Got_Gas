@@ -15,8 +15,8 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/dev');
 //set view engine
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'handlebars');
-app.use(bodyParser.JSON);
-app.use(bodyParser.urlEncoded({ extended: false }));
+// app.use(bodyParser.JSON);
+// app.use(bodyParser.urlEncoded({ extended: false }));
 
 /*remember to put in routes*/
 
@@ -26,7 +26,7 @@ app.use(express.static('./public'));
 /*app.use(routes*/
 
 app.get('*', (req, res) => {
-  res.sendfile('./public/views/index.html', { root: '.'});
+  res.sendFile('./views/index.html', { root: '.'});
 });
 
 app.use((err, req, res, next)=> {
